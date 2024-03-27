@@ -19,11 +19,6 @@ header nav {
     z-index: 1;
 }
 
-header nav h1 img {
-    height: 40px;
-    width: 40px;
-}
-
 header nav h1 {
     font-size: 26px;
     font-weight: 400;
@@ -62,10 +57,65 @@ header nav form {
     background-color: rgb(173, 126, 65);
 }
 
+/* Main-Section */
 .recipeContainer {
     text-align: center;
     margin-top: 20px;
     color: rgb(50, 50, 50);
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.recipe {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    max-width: 350px;
+    max-height: 480px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(78, 73, 73, 0.1), -5px -5px 10px rgba(34, 34, 34, 0.5);
+    cursor: pointer;
+}
+
+.recipe img {
+    height: 330px;
+}
+
+.recipe h3 {
+    font-size: 24px;
+    margin-block: 5px;
+}
+
+.recipe p {
+    font-size: 20px;
+    margin: 3px 0;
+    font-weight: 400;
+}
+
+.recipe span {
+    font-weight: 600;
+}
+
+.recipe button {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 18px auto;
+    background-color: rgb(50, 50, 50);
+    color: #fff;
+}
+
+.recipe button:hover {
+    background-color: rgb(59, 57, 57);
 }
 
 /* Responsive Code */
