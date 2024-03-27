@@ -60,35 +60,39 @@ header nav form {
 /* Main-Section */
 .recipeContainer {
     text-align: center;
-    margin-top: 20px;
-    color: rgb(50, 50, 50);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
     width: 80%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     margin: 10px auto;
     padding: 20px;
+    place-items: center;
 }
 
 .recipe {
     background-color: white;
+    color: rgb(50, 50, 50);
     display: flex;
     flex-direction: column;
     margin: 20px;
-    max-width: 350px;
-    max-height: 480px;
     border-radius: 6px;
+    max-width: 330px;
     box-shadow: 0 5px 10px rgba(78, 73, 73, 0.1), -5px -5px 10px rgba(34, 34, 34, 0.5);
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.recipe:hover {
+    transform: scale(1.02);
 }
 
 .recipe img {
-    height: 330px;
+    height: 280px;
+    width: 330px;
 }
 
 .recipe h3 {
-    font-size: 24px;
+    font-size: 22px;
     margin-block: 5px;
 }
 
@@ -116,6 +120,75 @@ header nav form {
 
 .recipe button:hover {
     background-color: rgb(59, 57, 57);
+}
+
+.recipeDetails {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background-color: rgb(59, 57, 57);
+    border-radius: 12px;
+    width: 40%;
+    height: 60%;
+    font-size: 20px;
+    transition: all 1s ease-in-out;
+    overflow-y: scroll;
+}
+
+.recipeContents {
+    padding: 30px;
+}
+
+.recipeName {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.ingredientList li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    line-height: 30px;
+    font-weight: 350;
+}
+
+.recipeInstructions p {
+    margin-top: 10px;
+    line-height: 30px;
+    white-space: pre-line;
+    font-weight: 350;
+}
+
+.closeBtn {
+    border: none;
+    background-color: rgb(173, 126, 65);
+    font-size: 20px;
+    color: #fff;
+    padding: 2px;
+    border-radius: 4px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.closeBtn:hover {
+    background-color: rgb(180, 138, 85);
+}
+
+.recipeDetails::-webkit-scrollbar {
+    width: 10px;
+}
+
+.recipeDetails::-webkit-scrollbar-thumb {
+    background-color: #babab5;
+    border-radius: 6px;
 }
 
 /* Responsive Code */
