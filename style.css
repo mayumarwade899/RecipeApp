@@ -31,6 +31,8 @@ header nav form {
     justify-content: center;
 }
 
+
+
 .searchBox {
     flex-grow: 1;
     margin-right: 10px;
@@ -192,7 +194,7 @@ header nav form {
 }
 
 /* Responsive Code */
-@media screen and (max-width:600px) {
+@media screen and (max-width:500px) {
     header nav {
         flex-direction: column;
     }
@@ -201,4 +203,10 @@ header nav form {
         width: 80%;
         margin-top: 20px;
     }
+
+    .recipeDetails {
+        width: 90%;
+        height: 70%;
+    }
 }
+
