@@ -208,5 +208,14 @@ header nav form {
         width: 90%;
         height: 70%;
     }
+
+    .recipeDetails::-webkit-scrollbar {
+        width: 20px;
+    }
+    
+    .recipeDetails::-webkit-scrollbar-thumb {
+        background-color: #babab5;
+        border-radius: 10px;
+    }
 }
 
