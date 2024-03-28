@@ -209,6 +209,11 @@ header nav form {
         height: 70%;
     }
 
+    .recipeContainer {
+        text-align: center;
+        max-width: 80%;
+    }
+
     .recipeDetails::-webkit-scrollbar {
         width: 20px;
     }
