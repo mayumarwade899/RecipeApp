@@ -211,6 +211,7 @@ header nav form {
 
     .recipeContainer {
         text-align: center;
+        justify-content: center;
         max-width: 80%;
     }
 
